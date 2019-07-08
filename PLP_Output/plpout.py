@@ -282,9 +282,3 @@ class plpout:
 		"""Borra archivos de la corrida de HDFS"""
 		path=self.path
 		run_cmd(["hadoop","fs","-rm","-r","-f",path])
-	
-
-
-  	
-
-
