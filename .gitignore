@@ -3,3 +3,9 @@
 _pycache__/
 *.py[cod]
 *$py.class
+
+PLP_Output/
+*.py[cod] 
+*$py.class
+
+
