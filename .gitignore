@@ -7,5 +7,6 @@ _pycache__/
 PLP_Output/
 *.py[cod] 
 *$py.class
+*.pyc
 
 
