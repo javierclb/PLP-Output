@@ -1,11 +1,12 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: PLP-Output
-Version: 0.0.1
+Version: 0.0.2
 Summary: Libreria para tratamiento de salidas PLP
-Home-page: UNKNOWN
+Home-page: git@github.com:javierclb/PLP_Output.git
 Author: Javier De la Fuente Arce
 Author-email: jdelafuente@colbun.cl
-License: UNKNOWN
+License: MIT
+Download-URL: https://github.com/javierclb/PLP_Output/tree/master/dist
 Description-Content-Type: UNKNOWN
 Description: UNKNOWN
 Keywords: PLP

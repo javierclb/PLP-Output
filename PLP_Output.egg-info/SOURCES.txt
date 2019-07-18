@@ -1,3 +1,4 @@
+README.md
 setup.py
 PLP_Output/__init__.py
 PLP_Output/plpout.py
@@ -6,4 +7,5 @@ PLP_Output/savetohive.py
 PLP_Output.egg-info/PKG-INFO
 PLP_Output.egg-info/SOURCES.txt
 PLP_Output.egg-info/dependency_links.txt
+PLP_Output.egg-info/requires.txt
 PLP_Output.egg-info/top_level.txt
