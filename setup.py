@@ -7,7 +7,7 @@ setup(
     packages=['PLP_Output'],
     author='Javier De la Fuente Arce',
     author_email='jdelafuente@colbun.cl',
-    url='git@github.com:javierclb/PLP_Output',
+    url='https://github.com/javierclb/PLP_Output',
     download_url='https://github.com/javierclb/PLP_Output/tree/master/dist',
     keywords=['PLP'],
     licence='MIT',
