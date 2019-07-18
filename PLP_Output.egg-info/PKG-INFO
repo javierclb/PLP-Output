@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: PLP-Output
-Version: 0.0.2
+Version: 0.0.3
 Summary: Libreria para tratamiento de salidas PLP
-Home-page: git@github.com:javierclb/PLP_Output.git
+Home-page: git@github.com:javierclb/PLP_Output
 Author: Javier De la Fuente Arce
 Author-email: jdelafuente@colbun.cl
 License: MIT
