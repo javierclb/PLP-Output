@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='PLP-Output',
-    version='0.0.3',
+    name='PLP_Output',
+    version='0.0.4',
     description='Libreria para tratamiento de salidas PLP',
-    packages=['PLP-Output'],
+    packages=['PLP_Output'],
     author='Javier De la Fuente Arce',
     author_email='javier.delafuente18@outlook.com',
     url='https://github.com/javierclb/PLP-Output',

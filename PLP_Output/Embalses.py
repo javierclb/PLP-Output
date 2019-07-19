@@ -4,7 +4,7 @@ class Embalses():
 
     def cota(self,nombre,Volumen):
 
-        if nombre=='Guaiquivilo' or nombre=='GUAIQUIVILO':
+        if nombre=='HID.Guaiquivilo' or nombre=='GUAIQUIVILO':
             a0 = 1112.76569214446
             a1 = 0.204122891451908
             a2 = -2.08202656471027E-04
@@ -12,7 +12,7 @@ class Embalses():
             cota = a0 + (a1 * Volumen) + (a2 * Volumen ** 2) + (a3 * Volumen ** 3)
             return cota
 
-        if nombre=='Cipreses' or nombre=='CIPRESES':
+        if nombre=='HID.Cipreses' or nombre=='CIPRESES':
             if Volumen <= 0:
                 Cot_CIPRESES = 1280
             else:
@@ -23,7 +23,7 @@ class Embalses():
                 Cot_CIPRESES = (-a1 + DVol) / (2 * a2)
             return Cot_CIPRESES
 
-        if nombre=='Lleuques' or nombre=='LLEUQUES':
+        if nombre=='HID.Lleuques' or nombre=='LLEUQUES':
             a0 = 1009.24816916763
             a1 = 1.89721565360991
             a2 = -2.37937658241295E-02
@@ -31,7 +31,7 @@ class Embalses():
             Cot_LLEUQUES = a0 + (a1 * Volumen) + (a2 * Volumen **2) + (a3 * Volumen ** 3)
             return Cot_LLEUQUES
 
-        if nombre=='Canutillar' or nombre=='CANUTILLAR':
+        if nombre=='HID.Canutillar' or nombre=='CANUTILLAR':
             contador=0
             if Volumen < 449.739:
                 contador+=1
@@ -43,7 +43,7 @@ class Embalses():
                 Cot_CANUTILLAR = 0.019715117 * Volumen + 221.99594
             return Cot_CANUTILLAR
 
-        if nombre=='Rucatayo' or nombre=='RUCATAYO':
+        if nombre=='HID.Rucatayo' or nombre=='RUCATAYO':
             a0 = 144
             a1 = 148
             Cot_RUCATAYO = (Volumen * 1000000 - 4816560) / 397552.5 + a0
@@ -51,7 +51,7 @@ class Embalses():
                 Cot_RUCATAYO = a1
             return Cot_RUCATAYO
 
-        if nombre=='Pilmaiquen' or nombre=='PILMAIQUEN':
+        if nombre=='HID.Pilmaiquen' or nombre=='PILMAIQUEN':
             a0 = 102
             a1 = 103.7
             Cot_PILMAIQUEN = Volumen / 11700 / 14148 * 1000000 + a0
@@ -61,7 +61,7 @@ class Embalses():
                 Cot_PILMAIQUEN = a0
             return Cot_PILMAIQUEN
 
-        if nombre=='Pangue' or nombre=='PANGUE':
+        if nombre=='HID.Pangue' or nombre=='PANGUE':
             a0 = 493
             a1 = 0.293889548
             a2 = -0.001273403
@@ -69,7 +69,7 @@ class Embalses():
             Cot_PANGUE = a0 + a1 * Volumen + a2 * Volumen ** 2 + a3 * Volumen ** 3
             return Cot_PANGUE
 
-        if nombre == 'Pehuenche' or nombre=='PEHUENCHE':
+        if nombre == 'HID.Pehuenche' or nombre=='PEHUENCHE':
             a0 = 12532.0161
             a1 = -42.383595
             a2 = 0.0358801
@@ -77,7 +77,7 @@ class Embalses():
             Cot_PEHUENCHE = (-a1 + DVol) / (2 * a2)
             return Cot_PEHUENCHE
 
-        if nombre == 'Angostura' or nombre=='ANGOSTURA':
+        if nombre == 'HID.Angostura' or nombre=='ANGOSTURA':
             if Volumen < 0.27:
                 Cot_ANGOSTURA = -48.4192665413133 * Volumen ** 2 + 29.5296605308872 * Volumen + 265.545840411463
             elif Volumen < 2.07:
@@ -98,7 +98,7 @@ class Embalses():
                 Cot_ANGOSTURA = -4.80482772640695E-04 * Volumen ** 2 + 0.253576434458394 * Volumen + 294.546288065969
             return Cot_ANGOSTURA
 
-        if nombre == 'Eltoro' or nombre=='ELTORO':
+        if nombre == 'HID.Eltoro' or nombre=='ELTORO':
             Datos=dict()
             Datos[1] = 0
             Datos[2] = 48.28954
@@ -198,7 +198,7 @@ class Embalses():
             Cot_LMAULE = CotFin
             return Cot_LMAULE
 
-        if nombre == 'Machicura' or nombre=='MACHICURA':
+        if nombre == 'HID.Machicura' or nombre=='MACHICURA':
             Error_Cota = 0.005
             Num_de_Iter = 10
             Iter = 0
@@ -214,7 +214,7 @@ class Embalses():
             Cot_MACHICURA = CotFin
             return Cot_MACHICURA
 
-        if nombre == 'Polcura' or nombre=='POLCURA':
+        if nombre == 'HID.Polcura' or nombre=='POLCURA':
             Error_Cota = 0.005
             Num_de_Iter = 10
             Iter = 0
@@ -230,7 +230,7 @@ class Embalses():
             Cot_POLCURA = CotFin
             return Cot_POLCURA
 
-        if nombre == 'Rapel' or nombre=='RAPEL':
+        if nombre == 'HID.Rapel' or nombre=='RAPEL':
             Error_Cota = 0.005
             Num_de_Iter = 10
             Iter = 0
@@ -247,7 +247,7 @@ class Embalses():
             Cot_RAPEL = CotFin
             return Cot_RAPEL
 
-        if nombre == 'Ralco' or nombre=='RALCO':
+        if nombre == 'HID.Ralco' or nombre=='RALCO':
             Vol_Inf=dict()
 
             Vol_Inf[1] = 0
@@ -290,7 +290,7 @@ class Embalses():
                     Cot_Ralco = Cota_R
             return Cot_Ralco
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             Error_Cota = 0.001
             if Volumen < 319.1:
                 Cot_COLBUN = 393
@@ -328,7 +328,7 @@ class Embalses():
 
     def dcot(self,nombre,Volumen):
 
-        if nombre == 'Lmaule' or nombre=='LMAULE':
+        if nombre == 'HID.Lmaule' or nombre=='LMAULE':
             a0 = 3.25854232403699E-03
             a1 = 0.025405983908303
             a2 = -1.35727677749965E-05
@@ -343,7 +343,7 @@ class Embalses():
             CotEST_LMAULE = min(CotEST_LMAULE, 2180.3)
             return CotEST_LMAULE
 
-        if nombre == 'Machicura' or nombre=='MACHICURA':
+        if nombre == 'HID.Machicura' or nombre=='MACHICURA':
             a0 = 253.9619
             a1 = 0.243919
             a2 = -0.006546
@@ -353,7 +353,7 @@ class Embalses():
             CotEST_MACHICURA = a0 + (a1 * Volumen) + (a2 * Volumen ** 2) + (a3 * Volumen ** 3) + (a4 * Volumen ** 4) + (a5 * Volumen ** 5)
             return CotEST_MACHICURA
 
-        if nombre == 'Polcura' or nombre=='POLCURA':
+        if nombre == 'HID.Polcura' or nombre=='POLCURA':
             a0 = 730.02173
             a1 = 8.94574
             a2 = -8.50159
@@ -364,7 +364,7 @@ class Embalses():
             CotEST_POLCURA = a0 + (a1 * DVol) + (a2 * DVol ** 2) + (a3 * DVol ** 3) + (a4 * DVol ** 4) + (a5 * DVol ** 5)
             return CotEST_POLCURA
 
-        if nombre == 'Rapel' or nombre=='RAPEL':
+        if nombre == 'HID.Rapel' or nombre=='RAPEL':
             a0 = 89.57534303
             a1 = 0.45374052
             a2 = 0.02412212
@@ -372,7 +372,7 @@ class Embalses():
             CotEST_RAPEL = a0 + (a1 * Volumen ** 0.5) + (a2 * Volumen) + (a3 * Volumen ** 1.5)
             return CotEST_RAPEL
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             a0 = 364.83334314
             a1 = 0.1113822656
             a2 = -0.00008523
@@ -384,7 +384,7 @@ class Embalses():
 
     def volumen(self,nombre,Cota):
 
-        if nombre == 'Guaiquivilo' or nombre=='GUAQUIVILO':
+        if nombre == 'HID.Guaiquivilo' or nombre=='GUAQUIVILO':
             a3 = 3.49271697417765E-04
             a2 = -1.11651634223517
             a1 = 1190.27813870034
@@ -395,7 +395,7 @@ class Embalses():
                 Vol=Vmax
             return Vol
 
-        if nombre == 'Cipreses' or nombre=='CIPRESES':
+        if nombre == 'HID.Cipreses' or nombre=='CIPRESES':
 
             if Cota <= 1280:
                 Vol_CIPRESES = 0  #
@@ -406,7 +406,7 @@ class Embalses():
                 Vol_CIPRESES = a0 + (a1 * Cota) + (a2 * Cota ** 2)
             return Vol_CIPRESES
 
-        if nombre == 'Lleuques' or nombre=='LLEUQUES':
+        if nombre == 'HID.Lleuques' or nombre=='LLEUQUES':
             a3 = 7.34648088052782E-05
             a2 = -0.209263122091889
             a1 = 198.09402889387
@@ -417,7 +417,7 @@ class Embalses():
                 Vol_LLEUQUES = Vmax
             return Vol_LLEUQUES
 
-        if nombre == 'Canutillar' or nombre=='CANUTILLAR':
+        if nombre == 'HID.Canutillar' or nombre=='CANUTILLAR':
             contador=0
             if Cota < 230:
                 contador+=1
@@ -430,7 +430,7 @@ class Embalses():
                 Vol_CANUTILLAR = 50.7225 * Cota - 11260.189
             return Vol_CANUTILLAR
 
-        if nombre == 'Rucatayo' or nombre=='RUCATAYO':
+        if nombre == 'HID.Rucatayo' or nombre=='RUCATAYO':
             a0 = 144
             a1 = 148
             if Cota > a1:
@@ -438,7 +438,7 @@ class Embalses():
             Vol_RUCATAYO = ((Cota - a0) * 397552.5 + 4816560) / 1000000
             return Vol_RUCATAYO
 
-        if nombre == 'Pilmaiquen' or nombre=='PILMAIQUEN':
+        if nombre == 'HID.Pilmaiquen' or nombre=='PILMAIQUEN':
             a0 = 102
             a1 = 103.7
             if Cota <= a1:
@@ -447,7 +447,7 @@ class Embalses():
                 Vol_PILMAIQUEN = (a1 - a0) * 117 * 100 * 14148 / 1000000
             return Vol_PILMAIQUEN
 
-        if nombre=='Pangue' or nombre=='PANGUE':
+        if nombre=='HID.Pangue' or nombre=='PANGUE':
             a0 = 7091.6
             a1 = -32.43
             a2 = 0.0366
@@ -460,14 +460,14 @@ class Embalses():
                 Vol_PANGUE=0
             return Vol_PANGUE
 
-        if nombre == 'Pehuenche' or nombre=='PEHUENCHE':
+        if nombre == 'HID.Pehuenche' or nombre=='PEHUENCHE':
             a0 = 12532.0161
             a1 = -42.383595
             a2 = 0.0358801
             Vol_PEHUENCHE = a0 + (a1 * Cota) + (a2 * Cota ** 2)
             return Vol_PEHUENCHE
 
-        if nombre == 'Angostura' or nombre=='ANGOSTURA':
+        if nombre == 'HID.Angostura' or nombre=='ANGOSTURA':
             if Cota < 280:  #
                 Vol_ANGOSTURA = 1.42084270641058E-02 * Cota ** 2 - 7.55794967587359 * Cota + 1005.0989369465
             elif Cota < 290:
@@ -484,7 +484,7 @@ class Embalses():
                 Vol_ANGOSTURA = 0.172040377016484 * Cota ** 2 - 102.168372622437 * Cota + 15211.766064903
             return Vol_ANGOSTURA
 
-        if nombre == 'Eltoro' or nombre=='ELTORO':
+        if nombre == 'HID.Eltoro' or nombre=='ELTORO':
             Datos=dict()
             Datos[1] = 0
             Datos[2] = 48.28954
@@ -567,7 +567,7 @@ class Embalses():
                 Vol_ELTORO = max(Vol_ELTORO, 0)
             return Vol_ELTORO
 
-        if nombre == 'Lmaule' or nombre=='LMAULE':
+        if nombre == 'HID.Lmaule' or nombre=='LMAULE':
             DCota = Cota - 2152.135
             a0 = -0.426511610904754
             a1 = 39.85091749344
@@ -579,7 +579,7 @@ class Embalses():
             Vol_LMAULE = max(Vol_LMAULE, 0)
             return Vol_LMAULE
 
-        if nombre == 'Machicura' or nombre=='MACHICURA':
+        if nombre == 'HID.Machicura' or nombre=='MACHICURA':
             a0 = 0.220082
             a1 = 3.869693
             a2 = 0.854351
@@ -593,7 +593,7 @@ class Embalses():
                 Vol_MACHICURA = a0 + (a1 * DCota) + (a2 * DCota ** 2) + (a3 * DCota ** 3) + (a4 * DCota ** 4) + (a5 * DCota ** 5)
             return Vol_MACHICURA
 
-        if nombre == 'Polcura' or nombre=='POLCURA':
+        if nombre == 'HID.Polcura' or nombre=='POLCURA':
             a0 = 0.6976365827
             a1 = 90.859293303
             a2 = 40.08341237
@@ -604,7 +604,7 @@ class Embalses():
             Vol_POLCURA = (a0 + (a1 * DCota) + (a2 * DCota ** 2) + (a3 * DCota ** 3) + (a4 * DCota ** 4) + (a5 * DCota ** 5)) / 1000
             return Vol_POLCURA
 
-        if nombre == 'Rapel' or nombre=='RAPEL':
+        if nombre == 'HID.Rapel' or nombre=='RAPEL':
             a0 = -36039.35
             a1 = 1279.686867
             a2 = -15.1802416
@@ -613,7 +613,7 @@ class Embalses():
             Vol_RAPEL = max(Vol_RAPEL, 65.3)
             return Vol_RAPEL
 
-        if nombre == 'Ralco' or nombre=='RALCO':
+        if nombre == 'HID.Ralco' or nombre=='RALCO':
             Vol_Inf=dict()
             Vol_Inf[1] = 0
             Vol_Inf[2] = 0.02132
@@ -647,7 +647,7 @@ class Embalses():
                 Vol_Ralco = (a0 + a1 * Cota_R + a2 * Cota_R ** 2 + a3 * Cota_R ** 3) / 1000
             return Vol_Ralco
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             a3 = 215.679132
             a2 = -564.993651
             a1 = 496.907289
@@ -680,7 +680,7 @@ class Embalses():
 
     def dvol(self,nombre,Cota):
 
-        if nombre == 'Lmaule' or nombre=='LMAULE':
+        if nombre == 'HID.Lmaule' or nombre=='LMAULE':
             DCota = Cota - 2152.135
             a0 = -0.426511610904754
             a1 = 39.85091749344
@@ -691,7 +691,7 @@ class Embalses():
             dVol_LMAULE = (a1) + 2 * (a2 * DCota) + 3 * (a3 * DCota ** 2) + 4 * (a4 * DCota ** 3) + 5 * (a5 * DCota ** 4)
             return dVol_LMAULE
 
-        if nombre == 'Machicura' or nombre=='MACHICURA':
+        if nombre == 'HID.Machicura' or nombre=='MACHICURA':
             a1 = 3.869693
             a2 = 0.854351
             a3 = -0.346473
@@ -701,7 +701,7 @@ class Embalses():
             dVol_MACHICURA = (a1) + 2 * (a2 * DCota) + 3 * (a3 * DCota ** 2) + 4 * (a4 * DCota ** 3) + 5 * (a5 * DCota **4)
             return dVol_MACHICURA
 
-        if nombre == 'Polcura' or nombre=='POLCURA':
+        if nombre == 'HID.Polcura' or nombre=='POLCURA':
             a1 = 90.859293303
             a2 = 40.08341237
             a3 = -13.9725593488
@@ -711,7 +711,7 @@ class Embalses():
             dVol_POLCURA = ((a1) + 2 * (a2 * DCota) + 3 * (a3 * DCota ** 2) + 4 * (a4 * DCota ** 3) + 5 * (a5 * DCota **4)) / 1000
             return dVol_POLCURA
 
-        if nombre == 'Rapel' or nombre=='RAPEL':
+        if nombre == 'HID.Rapel' or nombre=='RAPEL':
             a1 = 1279.686867
             a2 = -15.1802416
             a3 = 0.060121028
@@ -719,7 +719,7 @@ class Embalses():
 
             return dVol_RAPEL
 
-        if nombre == 'Ralco' or nombre=='RALCO':
+        if nombre == 'HID.Ralco' or nombre=='RALCO':
             a3 = 0.9869
             a2 = -72.676
             a1 = 2789.6
@@ -727,7 +727,7 @@ class Embalses():
             dVol_dCot = (a1 + 2 * a2 * Cota_R + 3 * a3 * Cota_R ** 2) / 1000
             return dVol_dCot
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             a3 = 215.679132
             a2 = -564.993651
             a1 = 496.907289
@@ -738,20 +738,20 @@ class Embalses():
 
     def rendimiento(self,nombre,Cota):
 
-        if nombre == 'Guaiquivilo' or nombre=='GUAIQUIVILO':
+        if nombre == 'HID.Guaiquivilo' or nombre=='GUAIQUIVILO':
             Rend0 = -9.795508461
             cons1 = 0.0091608326
             Rend_GUAIQUIVILO = Rend0 + Cota * cons1
             return Rend_GUAIQUIVILO
 
-        if nombre == 'Cipreses' or nombre=='CIPRESES':
+        if nombre == 'HID.Cipreses' or nombre=='CIPRESES':
             cons1 = -354.62162659
             cons2 = 0.5410166883
             cons3 = -0.0002046658
             Rend_CIPRESES = cons1 + cons2 * Cota + cons3 * Cota ** 2
             return Rend_CIPRESES
 
-        if nombre == 'Canutillar' or nombre=='CANUTILLAR':
+        if nombre == 'HID.Canutillar' or nombre=='CANUTILLAR':
             Rend0 = 2.082606
             cons1 = -0.018920591
             cons2 = 0.000120086
@@ -759,27 +759,27 @@ class Embalses():
             Rend_CANUTILLAR = Rend0 + Cota * cons1 + Cota ^ 2 * cons2 + Cota ^ 3 * cons3
             return Rend_CANUTILLAR
 
-        if nombre== 'Pangue' or nombre=='PANGUE':
+        if nombre== 'HID.Pangue' or nombre=='PANGUE':
             cons1 = -3.6981
             cons2 = 0.0094
             cons3 = -0.0000008
             Rend_PANGUE = cons1 + cons2 * Cota + cons3 * Cota ** 2
             return Rend_PANGUE
 
-        if nombre== 'Pehuenche' or nombre=='PEHUENCHE':
+        if nombre== 'HID.Pehuenche' or nombre=='PEHUENCHE':
             d0 = 17.2105
             d1 = -0.0563686
             d2 = 0.0000502872
             Rend_PEHUENCHE = d0 + d1 * Cota + d2 * Cota * Cota
             return Rend_PEHUENCHE
 
-        if nombre== 'Eltoro' or nombre=='ELTORO':
+        if nombre== 'HID.Eltoro' or nombre=='ELTORO':
             cons1 = 0.008
             cons2 = 5.931
             Rend_ELTORO = cons1 * Cota - cons2
             return Rend_ELTORO
 
-        if nombre == 'Rapel' or nombre=='RAPEL':
+        if nombre == 'HID.Rapel' or nombre=='RAPEL':
             cons1 = -1.18346
             cons2 = 0.026904
             cons3 = -0.00009
@@ -787,13 +787,13 @@ class Embalses():
             Rend_RAPEL = cons1 + cons2 * Cota + cons3 * Cota ** 2
             return Rend_RAPEL
 
-        if nombre == 'Ralco' or nombre=='RALCO':
+        if nombre == 'HID.Ralco' or nombre=='RALCO':
             Pend = 0.0081
             Cte0 = -4.1740612
             Rend_RALCO = Pend * Cota + Cte0
             return Rend_RALCO
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             Rend0 = 1.55
             Cota0 = 430.55
             CotaD = 267.76
@@ -802,14 +802,14 @@ class Embalses():
 
     def filtraciones(self,nombre,Cota):
 
-        if nombre == 'Cipreses' or nombre=='CIPRESES':
+        if nombre == 'HID.Cipreses' or nombre=='CIPRESES':
             if  Cota <= 1307:
                 Filt_CIPRESES = 0.158 * Cota - 192.212
             else:
                 Filt_CIPRESES = 0.531 * Cota - 679.985
             return Filt_CIPRESES
 
-        if nombre == 'Eltoro' or nombre=='ELTORO':
+        if nombre == 'HID.Eltoro' or nombre=='ELTORO':
             a0 = -133471.205667
             a1 = 251.668765787
             a2 = -0.112314280288
@@ -818,7 +818,7 @@ class Embalses():
             Filt_ELTORO = a0 + (a1 * Cota) + (a2 * Cota ** 2) + (a3 * Cota ** 3) + (a4 * Cota ** 4)
             return Filt_ELTORO
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             cont=0
             if Cota >= 423:
                 cont+=1
@@ -835,7 +835,7 @@ class Embalses():
 
     def punteroA(self,nombre,m,x,Datos):
 
-        if nombre == 'Eltoro' or nombre=='ELTORO':
+        if nombre == 'HID.Eltoro' or nombre=='ELTORO':
             j=1
             k=m
             flag=True
@@ -854,7 +854,7 @@ class Embalses():
             dc=d1/d2
             return (i,dc)
 
-        if nombre == 'Ralco' or nombre=='RALCO':
+        if nombre == 'HID.Ralco' or nombre=='RALCO':
             j = 1
             k = m
             flag = True
@@ -871,7 +871,7 @@ class Embalses():
             return i
 
 
-        if nombre == 'Colbun' or nombre=='COLBUN':
+        if nombre == 'HID.Colbun' or nombre=='COLBUN':
             j = 1
             k = m
             flag = True
