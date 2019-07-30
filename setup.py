@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='PLP_Output',
-    version='0.0.4',
+    version='0.0.5',
     description='Libreria para tratamiento de salidas PLP',
     packages=['PLP_Output'],
     author='Javier De la Fuente Arce',

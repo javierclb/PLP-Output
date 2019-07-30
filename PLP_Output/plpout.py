@@ -134,7 +134,7 @@ class plpout:
         
         	plpcen_final=plpbar_final.join(plpcen_final,["Bloque","Tipo","caso","barnom","Index","fecha","Categoria","Duracion"])
 		
-		plpcen_final=plpcen_final.selectExpr("caso","fecha","cennom","Tipo","barnom","bloque","Index","fisico","categoria","fisico*cmgbar as val")
+		plpcen_final=plpcen_final.selectExpr("caso","fecha","cennom","Tipo","barnom","bloque","Index","fisico","categoria","fisico*cmgbar as valorizado")
 		
 		return plpbar_final,plpcen_final		  
 
@@ -257,7 +257,7 @@ class plpout:
 
 		#Inyeccion valorizada    
 		iny_val=plpcen_final.join(centrales,["cennom"])\
-				    .selectExpr("fecha","Central as descripcion","fisico","val as valorizado","Index","barnom as barra","Bloque","Categoria")\
+				    .selectExpr("fecha","Central as descripcion","fisico","valorizado","Index","barnom as barra","Bloque","Categoria")\
 				    .withColumn("tipo",lit("iny"))
 
 		#Filtro de fecha
