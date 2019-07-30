@@ -35,6 +35,7 @@ cd ~
 #Sube archivos a hadoop
 ssh $USER@quilleco.colbunsa.cl "hadoop fs -mkdir -p $3/$2/$1 &&\
 hdfs dfs -put -f /home/$USER/$3/$2/$1/* $3/$2/$1 && \
+spark2-submit plp_upload.py $1 $3 $2 $4 && \
 rm -rf $3/$2/$1"
 
 #hdfs dfs rm -rf $3/$2/$1 "
