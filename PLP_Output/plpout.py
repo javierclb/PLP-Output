@@ -134,7 +134,7 @@ class plpout:
         
         	plpcen_final=plpbar_final.join(plpcen_final,["Bloque","Tipo","caso","barnom","Index","fecha","Categoria","Duracion"])
 		
-		plpcen_final=plpcen_final.selectExpr("caso","fecha","cennom","Tipo","barnom","bloque","Index","fisico","categoria","fisico*cmgbar as valorizado")
+		plpcen_final=plpcen_final.selectExpr("caso","fecha","cennom","Tipo","barnom","bloque","Index","fisico","categoria","fisico*cmgbar as valorizado","cencvar")
 		
 		return plpbar_final,plpcen_final		  
 
